@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+:root {
+    --color-primary-100: #382bf0;
+    --color-primary-200: #5e43f3;
+    --color-primary-300: #7a5af5;
+    --color-primary-400: #9171f8;
+    --color-primary-500: #a688fa;
+    --color-primary-600: #ba9ffb;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100: #1a1625;
+    --color-surface-mixed-200: #2f2b3a;
+    --color-surface-mixed-300: #46424f;
+    --color-surface-mixed-400: #5e5a66;
+    --color-surface-mixed-500: #76737e;
+    --color-surface-mixed-600: #908d96;
+
+
+    /** Light theme color palette*/
+
+    --color1: #dcc692;
+    --color2: #070705;
+    --color3: #888888;
+    --color3_1: #777777;
+    --color4: #5D533D;
+    --color5: #877a59;
+    --color6: #8e6f66;
+    --color6_1: #825646;
+    --color7: #dcc679;
+
+
+    color-scheme: light dark;
+    color: light-dark(#000, #fff);
+}
+
+
+body {
+    font-family: 'Courier New', serif;
+    border-bottom: 80px;
+    color: light-dark(#000, #fff);
+    font-size: large;
+    background-color: light-dark(var(--color1), var(--color-surface-mixed-100));
+}
+
+
+.menuBg {
+    border-bottom: 100px;
+    color: light-dark(#000, #fff);
+    background-color: light-dark(var(--color5), var(--color-surface-mixed-300));
+}
+
+.footerBg {
+    background-color: light-dark(var(--color5), var(--color-surface-mixed-300));
+    color: light-dark(#000, #fff);
+
+    a {
+        color: light-dark(#000, #fff);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+/********************/
+
+.form-control {
+    appearance: none;
+    background-color: light-dark(var(--color4), var(--color-surface-mixed-200));
+    color: light-dark(#fff, #fff);
+}
+
+.imageThumbnail {
+    height: 150px;
+    max-width: 150px;
+}
+
+.logo {
+    height: 40px;
+    max-width: 40px;
+}
+
+.labelBg {
+    /*background-color: light-dark(#efedea, #4d194d);*/
+    color: light-dark(#000, var(--color-primary-500));
+}
+
+.cardBoxShadow {
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.cardHeaderStyle {
+    border-radius: 45px 0 0 0 !important;
+    /*color: #000;*/
+    text-align: center;
+    background-color: light-dark(var(--color4), var(--color-surface-mixed-200));
+    /*color: light-dark(#fff, #fff);*/
+}
+
+.card {
+    border-radius: 45px 0 45px 0;
+    background-color: light-dark(var(--color5), var(--color-surface-mixed-400));
+    color: light-dark(#fff, #fff);
+}
+
+.card-body {
+    border-radius: 0 0 45px 0;
+}
+
+.btnView {
+    background-color: light-dark(var(--color1), var(--color-primary-600));
+    color: light-dark(#000, #fff);
+}
+
+.btnView:hover {
+    background-color: light-dark(var(--color7), var(--color-primary-500));
+    color: light-dark(#000, #fff);
+}
+
+.btnEdit {
+    background-color: light-dark(var(--color3), var(--color-primary-200));
+    color: light-dark(#000, #fff);
+}
+
+.btnEdit:hover {
+    background-color: light-dark(var(--color3_1), var(--color-primary-100));
+    color: light-dark(#000, #fff);
+}
+
+.btnDelete {
+    background-color: light-dark(var(--color6), var(--color-surface-200));
+    color: light-dark(#000, #fff);
+}
+
+.btnDelete:hover {
+    background-color: light-dark(var(--color6_1), var(--color-surface-100));
+    color: light-dark(#000, #fff);
+}
+
+.buttonShadow {
+    -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+}
+
+.containerBordered {
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+}
+
+.cardTextLeftFloating {
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 20px;
+}

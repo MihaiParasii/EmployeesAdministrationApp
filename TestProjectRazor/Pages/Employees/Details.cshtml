@@ -1,0 +1,19 @@
+@page "{id}"
+@model TestProjectRazor.Pages.Employees.DetailsModel
+
+@{
+    ViewBag.Title = "Details";
+    ViewData["ForPartial"] = "Details";
+}
+
+<div class="row justify-content-center m-3">
+    <div class="col col-lg-8">
+        <vc:head-count department="Model.Employee!.Department"></vc:head-count>
+    </div>
+</div>
+
+<div class="row justify-content-center m-3">
+    <div class="col col-lg-8">
+        <partial name="Shared/_EmployeeCardPartial" model="Model.Employee" view-data="ViewData"/>
+    </div>
+</div>

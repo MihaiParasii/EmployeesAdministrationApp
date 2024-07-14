@@ -1,0 +1,113 @@
+@model Employee
+
+@{
+    string photoPath = ViewData["photoPath"]!.ToString()!;
+    IFormFile? photo = (IFormFile)ViewData["photo"]!;
+    string type = (string)ViewData["type"]!;
+
+    var departments = ViewData["departments"] as IEnumerable<Department>;
+    int employeeDepartmentId = (int)ViewData["EmployeeDepartmentId"]!;
+}
+<input type="hidden" asp-for="@Model.Id"/>
+<input type="hidden" asp-for="@Model.PhotoPath"/>
+<div class="row justify-content-center m-3">
+    <div class="col col-lg-8">
+        <div class="card cardBoxShadow">
+            <div class="card-header cardHeaderStyle text-center">
+                <h1>@type Employee:</h1>
+            </div>
+            <div class="card-body cardBodyStyle text-center">
+                <div class="form-group row">
+                    <label asp-for="@Model.Name" class="col col-lg-4 col-form-label text-right">Name:</label>
+                    <div class="col col-lg-6">
+                        <input asp-for="@Model.Name" class="form-control" placeholder="@Model.Name"/>
+                        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label asp-for="@Model.SurName" class="col col-lg-4 col-form-label text-right">Surname:</label>
+                    <div class="col col-lg-6">
+                        <input asp-for="@Model.SurName" class="form-control" placeholder="@Model.SurName"/>
+                        <span asp-validation-for="@Model.SurName" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label asp-for="@Model.BirthDate" class="col col-lg-4 col-form-label text-right">BirthDate:</label>
+                    <div class="col col-lg-6">
+                        <input asp-for="@Model.BirthDate" type="date" class="form-control"/>
+                        <span asp-validation-for="@Model.BirthDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label asp-for="@Model.Email" class="col col-lg-4 col-form-label text-right">E-mail:</label>
+                    <div class="col col-lg-6">
+                        <input asp-for="@Model.Email" class="form-control"/>
+                        <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label asp-for="@employeeDepartmentId" class="col col-lg-4 col-form-label text-right">Department:</label>
+                    <div class="col col-lg-6">
+                        <select asp-for="@employeeDepartmentId" class="form-control custom-select form-select">
+                            @if (Model.Department != null)
+                            {
+                                foreach (var department in departments)
+                                {
+                                    if (department.Name.Equals(Model.Department.Name))
+                                    {
+                                        <option value="@department.DepartmentId" selected>@department.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@department.DepartmentId">@department.Name</option>
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                @foreach (var department in departments)
+                                {
+                                    <option value="@department.DepartmentId">@department.Name</option>
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="@employeeDepartmentId" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label asp-for="@photo" class="col col-lg-4 col-form-label text-right">Photo:</label>
+                    <div class="col col-lg-6">
+                        <img src="@photoPath" alt="@Model" class="card-img-top imageThumbnail border-primary"/>
+                        <input asp-for="@photo" class="custom-file-input form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-footer text-center" style="background-color: rgba(0, 0, 0, 0.25);">
+                        <button type="submit" class="btn m-1 btnView">Save</button>
+                        <a asp-page="/Employees/index" class="btn m-1 btnDelete">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on("change", function () {
+                const fileName = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(fileName);
+            })
+        });
+    
+    </script>
+}

@@ -1,0 +1,301 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/obj/Debug/net8.0/scopedcss/projectbundle/TestProjectRazor.bundle.scp.css",
+      "PackagePath": "staticwebassets/TestProjectRazor.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/1ff0df1d-5ce8-4eb3-89f5-a2d65752c8ba_image_2024-07-08_15-56-48.png",
+      "PackagePath": "staticwebassets/images/1ff0df1d-5ce8-4eb3-89f5-a2d65752c8ba_image_2024-07-08_15-56-48.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/NotFound.png",
+      "PackagePath": "staticwebassets/images/NotFound.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/avatar3.png",
+      "PackagePath": "staticwebassets/images/avatar3.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/avatar4.png",
+      "PackagePath": "staticwebassets/images/avatar4.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/avatar5.png",
+      "PackagePath": "staticwebassets/images/avatar5.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/b4a5d935-13c5-4799-9b30-f43cea5e0e2e_image_2024-07-08_15-54-07.png",
+      "PackagePath": "staticwebassets/images/b4a5d935-13c5-4799-9b30-f43cea5e0e2e_image_2024-07-08_15-54-07.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/banner.jpg",
+      "PackagePath": "staticwebassets/images/banner.jpg"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/images/noimage.png",
+      "PackagePath": "staticwebassets/images/noimage.png"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TestProjectRazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.TestProjectRazor.props",
+      "PackagePath": "build\\TestProjectRazor.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TestProjectRazor.props",
+      "PackagePath": "buildMultiTargeting\\TestProjectRazor.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TestProjectRazor.props",
+      "PackagePath": "buildTransitive\\TestProjectRazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

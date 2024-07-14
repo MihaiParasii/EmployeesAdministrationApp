@@ -1,0 +1,11 @@
+@model Employee
+
+<div class="row">
+    <div class="col">
+        <div class="card-footer text-center" style="background-color: rgba(0,0,0,.25)">
+            <a asp-page="/Employees/index" class="btn m-1 btnView">Back</a>
+            <a asp-page="/Employees/Edit" asp-route-Id="@Model.Id" class="btn m-1 btnEdit">Edit</a>
+            <a asp-page="/Employees/Delete" asp-route-Id="@Model.Id" class="btn m-1 btnDelete">Delete</a>
+        </div>
+    </div>
+</div>

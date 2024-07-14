@@ -1,0 +1,44 @@
+@model Employee
+
+@{
+    string action = ViewData["ForPartial"]!.ToString()!;
+}
+
+<div class="card cardBoxShadow">
+    <div class="card-header cardHeaderStyle text-center">
+        <h1>@Model.Name @Model.SurName.ToUpper()</h1>
+    </div>
+    <div class="card-body cardBoxShadow ">
+        <div class="row">
+            <div class="col col-lg-9">
+                <label class="cardTextLeftFloating labelBg" for="detailsId">ID:</label>
+                <h4 class="cardTextLeftFloating" id="detailsId">@Model.Id</h4>
+                <hr>
+                <label class="cardTextLeftFloating labelBg" for="detailsEmail">Email: </label>
+                <h4 class="cardTextLeftFloating" id="detailsEmail">@Model.Email</h4>
+                <hr>
+                <label class="cardTextLeftFloating labelBg" for="detailsBirthDate">BirthDate: </label>
+                <h4 class="cardTextLeftFloating" id="detailsBirthDate">@Model.BirthDate</h4>
+                <hr>
+                <label class="cardTextLeftFloating labelBg" for="detailsDepartment">Department: </label>
+                <h4 class="cardTextLeftFloating" id="detailsDepartment">@Model.Department</h4>
+                <hr>
+            </div>
+            <div class="col col-lg-3">
+                <div style="border-right: 1px solid rgba(0,0,0,.1);">
+                    <img class="card-img-top imageThumbnail border border-primary"
+                         style="background-color: #d1e7ff" src="/images/@(Model.PhotoPath ?? "noimage.png")" asp-append-version="true" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    @switch (action)
+    {
+        case "Delete":
+            <partial name="_ButtonsForDeletePartial"/>
+            break;
+        case "Details":
+            <partial name="_ButtonsForDetailsPartial" model="@Model"/>
+            break;
+    }
+</div>

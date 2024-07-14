@@ -1,0 +1,60 @@
+@page
+@model TestProjectRazor.Pages.Employees.IndexModel
+
+
+@{
+    ViewBag.Title = "Employees";
+
+    if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> @TempData["SuccessMessage"].
+            <button type="button" class="close btn btn-primary" id="closeBtn" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> @TempData["ErrorMessage"].
+            <button type="button" class="close btn btn-primary" id="closeBtn" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+}
+
+<vc:head-count department="null"></vc:head-count>
+
+<form class="d-flex align-items-center flex-nowrap">
+    <input class="form-control mr-sm-2" asp-for="@Model.Query" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btnView my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+<div class="row">
+    @foreach (Employee employee in Model.Employees!)
+    {
+        string photoPath = $"/images/{employee.PhotoPath ?? "noimage.png"}";
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-deck">
+                <div class="card m-3 cardBoxShadow">
+                    <div class="card-header text-center cardHeaderStyle">
+                        <h3>@employee.Name</h3>
+                        <h4>@employee.SurName.ToUpper()</h4>
+                    </div>
+                    <div class="card-body text-center cardBodyStyle">
+                        <h5>Dept: @employee.Department.Name</h5>
+                        <img class="card-img-top imageThumbnail" src="@photoPath" asp-append-version="true" alt="">
+                    </div>
+                    <div class="card-footer text-center cardFooterStyle">
+                        <a asp-page="/Employees/Details" asp-route-Id="@employee.Id" class="btn m-1 btnView">View</a>
+                        <a asp-page="/Employees/Edit" asp-route-Id="@employee.Id" class="btn m-1 btnEdit">Edit</a>
+                        <a asp-page="/Employees/Delete" asp-route-Id="@employee.Id" class="btn m-1 btnDelete">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

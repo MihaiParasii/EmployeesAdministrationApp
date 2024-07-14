@@ -1,0 +1,46 @@
+@page
+@model IndexModel
+
+@{
+    ViewBag.Title = "Index";
+
+
+    if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> @TempData["SuccessMessage"].
+            <button type="button" class="close btn btn-primary" id="closeBtn" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> @TempData["ErrorMessage"].
+            <button type="button" class="close btn btn-primary" id="closeBtn" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+}
+
+<div class="row">
+    @foreach (Department department in Model.Departments!)
+    {
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-deck">
+                <div class="card m-3 cardBoxShadow">
+                    <div class="card-header text-center cardHeaderStyle">
+                        <h3>@department.Name</h3>
+                    </div>
+                    <div class="card-footer text-center cardFooterStyle">
+                        <a asp-page="/Departments/Edit" asp-route-Id="@department.DepartmentId" class="btn m-1 btnEdit">Edit</a>
+                        <a asp-page="/Departments/Delete" asp-route-Id="@department.DepartmentId" class="btn m-1 btnDelete">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

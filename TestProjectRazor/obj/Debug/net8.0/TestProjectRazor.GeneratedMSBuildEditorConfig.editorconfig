@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TestProjectRazor
+build_property.RootNamespace = TestProjectRazor
+build_property.ProjectDir = /Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Departments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVwYXJ0bWVudHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Departments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVwYXJ0bWVudHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Departments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVwYXJ0bWVudHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Departments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVwYXJ0bWVudHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTm90Rm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/Components/HeadCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL0NvbXBvbmVudHMvSGVhZENvdW50L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/_ButtonsForDeletePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19CdXR0b25zRm9yRGVsZXRlUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/_ButtonsForDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19CdXR0b25zRm9yRGV0YWlsc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/_EmployeeCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19FbXBsb3llZUNhcmRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/_EmployeeFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19FbXBsb3llZUZvcm1QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-enekr92bex

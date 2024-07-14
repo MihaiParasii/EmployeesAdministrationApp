@@ -1,0 +1,17 @@
+@page "{id}"
+@model TestProjectRazor.Pages.Employees.Edit
+
+@{
+    ViewBag.Title = "Edit";
+    string photoPath = $"/images/{Model.Employee.PhotoPath ?? "noimage.png"}";
+
+    ViewData["photoPath"] = photoPath;
+    ViewData["photo"] = Model.Photo;
+    ViewData["type"] = "Edit";
+    ViewData["departments"] = Model.Departments;
+    ViewData["EmployeeDepartmentId"] = Model.EmployeeDepartmentId;
+}
+
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <partial name="Shared/_EmployeeFormPartial" model="@Model.Employee" view-data="ViewData"/>
+</form>

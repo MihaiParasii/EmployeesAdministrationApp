@@ -1,0 +1,51 @@
+@page "{id}"
+@model TestProjectRazor.Pages.Departments.EditModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+<div class="text-danger text-center" asp-validation-summary="All"></div>
+
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <input type="hidden" asp-for="@Model.Department.DepartmentId"/>
+    <div class="row justify-content-center m-3">
+        <div class="col col-lg-8">
+            <div class="card cardBoxShadow">
+                <div class="card-header cardHeaderStyle text-center">
+                    <h1>Edit Department:</h1>
+                </div>
+                <div class="card-body cardBodyStyle text-center">
+                    <div class="form-group row">
+                        <label asp-for="@Model.Department.Name" class="col col-lg-4 col-form-label text-right">Name:</label>
+                        <div class="col col-lg-6">
+                            <input asp-for="@Model.Department.Name" class="form-control" placeholder="@Model.Department.Name"/>
+                            <span asp-validation-for="@Model.Department.Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <div class="card-footer text-center" style="background-color: rgba(0, 0, 0, 0.25);">
+                            <button type="submit" class="btn m-1 btnView">Save</button>
+                            <a asp-page="/Departments/index" class="btn m-1 btnDelete">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts
+    {
+        <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on("change", function () {
+                const fileName = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(fileName);
+            })
+        });
+        </script>
+    }
+
+</form>
