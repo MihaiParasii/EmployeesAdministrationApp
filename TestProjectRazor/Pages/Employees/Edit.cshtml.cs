@@ -7,19 +7,20 @@ using TestProjectRazorModels;
 namespace TestProjectRazor.Pages.Employees;
 
 public class Edit(
-    IEmployeeRepository employeeRepository,
-    IDepartmentRepository departmentRepository,
+    IRepository<Employee> employeeRepository,
+    IRepository<Department> departmentRepository,
     IWebHostEnvironment environment) : PageModel
 {
-    [BindProperty] public Employee Employee { get; set; }
+    [BindProperty] public Employee? Employee { get; set; }
     [BindProperty] public IFormFile? Photo { get; set; }
     [BindProperty] public int EmployeeDepartmentId { get; set; }
-    public IEnumerable<Department> Departments = departmentRepository.GetDepartments();
+
+    public IEnumerable<Department> Departments = departmentRepository.GetAll();
 
 
     public async Task<IActionResult> OnGet(int id)
     {
-        Employee = await employeeRepository.GetEmployeeById(id);
+        Employee = await employeeRepository.GetByIdAsync(id);
 
         if (Employee == null)
         {
@@ -31,7 +32,7 @@ public class Edit(
 
     public async Task<IActionResult> OnPost()
     {
-        Employee.Department = departmentRepository.GetDepartmentById(EmployeeDepartmentId);
+        Employee.Department = await departmentRepository.GetByIdAsync(EmployeeDepartmentId);
 
         if (!ModelState.IsValid)
         {
@@ -49,7 +50,7 @@ public class Edit(
             Employee.PhotoPath = ProcessUploadedFile();
         }
 
-        Employee = await employeeRepository.Update(Employee);
+        Employee = await employeeRepository.UpdateAsync(Employee);
         TempData["SuccessMessage"] = $"Update {Employee.Name} {Employee.SurName} successfully";
 
         return RedirectToPage($"/{nameof(Employees)}/{nameof(Index)}");

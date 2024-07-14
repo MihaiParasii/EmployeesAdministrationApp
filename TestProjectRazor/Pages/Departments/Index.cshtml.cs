@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TestProjectRazor.Services;
+using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Departments;
 
-public class IndexModel(IDepartmentRepository db) : PageModel
+public class IndexModel(IRepository<Department> repository) : PageModel
 {
-    public IEnumerable<TestProjectRazorModels.Department>? Departments { get; set; }
+    public IEnumerable<Department>? Departments { get; set; }
     
-    public void OnGet()
+    public async Task OnGet()
     {
-        Departments = db.GetDepartments();
+        Departments = await repository.GetAllAsync();
     }
 }

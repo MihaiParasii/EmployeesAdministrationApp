@@ -5,13 +5,13 @@ using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Employees;
 
-public class DetailsModel(IEmployeeRepository employeeRepository) : PageModel
+public class DetailsModel(IRepository<Employee> repository) : PageModel
 {
     public Employee? Employee { get; set; }
 
     public async Task<IActionResult> OnGet(int id)
     {
-        Employee = await employeeRepository.GetEmployeeById(id);
+        Employee = await repository.GetByIdAsync(id);
 
         if (Employee == null)
         {

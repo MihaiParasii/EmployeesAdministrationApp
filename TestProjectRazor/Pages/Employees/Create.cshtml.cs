@@ -6,50 +6,49 @@ using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Employees;
 
-public class Create(IEmployeeRepository employeeRepository, IDepartmentRepository departmentRepository, IWebHostEnvironment environment) : PageModel
+public class Create(
+    IRepository<Employee> employeeRepository,
+    IRepository<Department> departmentRepository,
+    IWebHostEnvironment environment) : PageModel
 {
     [BindProperty] public Employee Employee { get; set; }
     [BindProperty] public IFormFile? Photo { get; set; }
     [BindProperty] public int EmployeeDepartmentId { get; set; }
-    public IEnumerable<Department> Departments = departmentRepository.GetDepartments();
+    public IEnumerable<Department> Departments = departmentRepository.GetAll();
 
 
     public IActionResult OnGet()
-         {
-             Employee = new Employee
-             {
-                 Name = null!,
-                 SurName = null,
-                 Email = null,
-                 BirthDate = new DateOnly(2000, 1, 1),
-             };
-             return Page();
-         }
-     
-         public async Task<IActionResult> OnPost()
-         {
-             Employee.Department = departmentRepository.GetDepartmentById(EmployeeDepartmentId);
-             // Employee.Department = EmployeeDepartmentId;
-             
-     
-             if (!ModelState.IsValid)
-             {
-                 TempData["error"] = $"Error: {ModelState.ErrorCount}";
-                 return Page();
-             }
-     
-             if (Photo != null)
-             {
-                 Employee.PhotoPath = ProcessUploadedFile();
-             }
-     
-             var a = await employeeRepository.Add(Employee);
-             // throw new NotSupportedException($"Employee {Employee.Name} {Employee.SurName} {Employee.BirthDate} {Employee.Email} {Employee.Id} {Employee.Department}");
+    {
+        Employee = new Employee
+        {
+            Name = null!,
+            SurName = null,
+            Email = null,
+            BirthDate = new DateOnly(2000, 1, 1),
+        };
+        return Page();
+    }
 
-             TempData["SuccessMessage"] = $"Add {Employee.Name} {Employee.SurName} successfully";
-     
-             return RedirectToPage("/Employees/index");
-         }
+    public async Task<IActionResult> OnPost()
+    {
+        Employee.Department = await departmentRepository.GetByIdAsync(EmployeeDepartmentId);
+
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
+        if (Photo != null)
+        {
+            Employee.PhotoPath = ProcessUploadedFile();
+        }
+
+        await employeeRepository.AddAsync(Employee);
+
+        TempData["SuccessMessage"] = $"Add {Employee.Name} {Employee.SurName} successfully";
+
+        return RedirectToPage("/Employees/index");
+    }
 
     private string? ProcessUploadedFile()
     {

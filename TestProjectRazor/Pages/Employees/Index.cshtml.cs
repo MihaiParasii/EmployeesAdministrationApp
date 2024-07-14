@@ -6,7 +6,7 @@ using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Employees;
 
-public class IndexModel(IEmployeeRepository db) : PageModel
+public class IndexModel(IRepository<Employee> repository) : PageModel
 {
     public IEnumerable<Employee>? Employees { get; set; }
     [BindProperty(SupportsGet = true)] public string Query { get; set; } = null!;
@@ -15,11 +15,11 @@ public class IndexModel(IEmployeeRepository db) : PageModel
     {
         if (string.IsNullOrWhiteSpace(Query))
         {
-            Employees = await db.GetAllEmployees();
+            Employees = await repository.GetAllAsync();
         }
         else
         {
-            Employees = await db.Search(Query);
+            Employees = await repository.SearchAsync(Query);
         }
     }
 }

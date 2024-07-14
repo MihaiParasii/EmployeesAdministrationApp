@@ -3,3 +3,24 @@ bin/Debug
 .gitignore
 
 /bin
+/bin/
+
+TestProjectRazor/bin/Debug
+TestProjectRazor/bin/Debug/
+/TestProjectRazor/bin/Debug
+/TestProjectRazor/bin/Debug/
+
+TestProjectRazor/bin
+TestProjectRazor/bin/
+/TestProjectRazor/bin
+/TestProjectRazor/bin/
+
+TestProjectRazor/obj
+TestProjectRazor/obj/
+/TestProjectRazor/obj
+/TestProjectRazor/obj/
+
+TestProjectRazor/obj/Debug/
+/TestProjectRazor/obj/Debug/
+TestProjectRazor/obj/Debug
+/TestProjectRazor/obj/Debug

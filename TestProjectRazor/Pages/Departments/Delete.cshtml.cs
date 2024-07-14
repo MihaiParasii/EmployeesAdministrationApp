@@ -5,15 +5,15 @@ using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Departments;
 
-public class Delete(IDepartmentRepository departmentRepository, IEmployeeRepository employeeRepository) : PageModel
+public class Delete(IRepository<Department> departmentRepository, IRepository<Employee> employeeRepository) : PageModel
 {
     [BindProperty] public Department? Department { get; set; }
 
     public async Task<IActionResult> OnGet(int id)
     {
-        Department = departmentRepository.GetDepartmentById(id);
+        Department = await departmentRepository.GetByIdAsync(id);
 
-        var countEmployeesInThisDepartment = await employeeRepository.CountHeadsByDepartment(Department);
+        var countEmployeesInThisDepartment = await employeeRepository.CountHeadsByDepartmentAsync(Department);
 
         if (Department == null)
         {
@@ -33,13 +33,13 @@ public class Delete(IDepartmentRepository departmentRepository, IEmployeeReposit
         return Page();
     }
 
-    public IActionResult OnPost(int id)
+    public async Task<IActionResult> OnPost(int id)
     {
-        Department = departmentRepository.GetDepartmentById(id);
+        Department = await departmentRepository.GetByIdAsync(id);
 
         string departmentName = Department.Name;
 
-        if (departmentRepository.Delete(Department))
+        if (await departmentRepository.DeleteAsync(Department))
         {
             TempData["SuccessMessage"] = $"Delete {departmentName} successfully";
         }

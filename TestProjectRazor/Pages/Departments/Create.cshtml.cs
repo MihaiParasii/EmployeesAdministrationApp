@@ -1,16 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TestProjectRazor.Services;
+using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Departments;
 
-public class CreateModel(IDepartmentRepository departmentRepository) : PageModel
+public class CreateModel(IRepository<Department> repository) : PageModel
 {
-    [BindProperty] public TestProjectRazorModels.Department Department { get; set; }
+    [BindProperty] public Department Department { get; set; }
 
     public IActionResult OnGet()
     {
-        Department = new TestProjectRazorModels.Department();
+        Department = new Department();
         return Page();
     }
 
@@ -23,7 +24,7 @@ public class CreateModel(IDepartmentRepository departmentRepository) : PageModel
         }
 
 
-        departmentRepository.Add(Department);
+        repository.AddAsync(Department);
         TempData["SuccessMessage"] = $"Add {Department.Name} successfully";
 
         return RedirectToPage("/Employees/index");

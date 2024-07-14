@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using TestProjectRazor.Services;
 using TestProjectRazor.Services.Migrations;
+using TestProjectRazorModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +11,8 @@ builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddRazorPages();
 
 // builder.Services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
-builder.Services.AddScoped<IEmployeeRepository, MySqlEmployeeRepository>();
-builder.Services.AddScoped<IDepartmentRepository, MySqlDepartmentRepository>();
+builder.Services.AddScoped<IRepository<Employee>, MySqlEmployeeRepository>();
+builder.Services.AddScoped<IRepository<Department>, MySqlDepartmentRepository>();
 
 // TODO  Error on uncommenting line below latest version
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();

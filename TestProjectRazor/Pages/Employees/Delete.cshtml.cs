@@ -5,13 +5,13 @@ using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Employees
 {
-    public class DeleteModel(IEmployeeRepository employeeRepository) : PageModel
+    public class DeleteModel(IRepository<Employee> repository) : PageModel
     {
         public Employee? Employee { get; set; }
 
         public async Task<IActionResult> OnGet(int id)
         {
-            Employee = await employeeRepository.GetEmployeeById(id);
+            Employee = await repository.GetByIdAsync(id);
 
             if (Employee != null)
             {
@@ -23,13 +23,13 @@ namespace TestProjectRazor.Pages.Employees
 
         public async Task<RedirectToPageResult> OnPost(Employee employee)
         {
-            employee = await employeeRepository.GetEmployeeById(employee.Id)!;
+            employee = await repository.GetByIdAsync(employee.Id)!;
             
             string employeeName = employee.Name;
             string employeeSurname = employee.SurName;
             
 
-            if (await employeeRepository.Delete(employee))
+            if (await repository.DeleteAsync(employee))
             {
                 TempData["SuccessMessage"] = $"Delete {employeeName} {employeeSurname} successfully";
             }

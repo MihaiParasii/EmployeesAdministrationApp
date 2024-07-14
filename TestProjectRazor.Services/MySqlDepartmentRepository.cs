@@ -3,36 +3,51 @@ using TestProjectRazorModels;
 
 namespace TestProjectRazor.Services;
 
-public class MySqlDepartmentRepository(AppDbContext context) : IDepartmentRepository
+public class MySqlDepartmentRepository(AppDbContext context) : IRepository<Department>
 {
-    public IEnumerable<Department> GetDepartments()
+    public IEnumerable<Department> GetAll()
     {
         return context.Departments.ToList();
     }
 
-    public Department? GetDepartmentById(int id)
+    public async Task<IEnumerable<Department>> GetAllAsync()
     {
-        return context.Departments.FirstOrDefault(d => d.DepartmentId == id);
+        return await context.Departments.ToListAsync();
     }
 
-    public Department Add(Department department)
+    public async Task<IEnumerable<Department>> SearchAsync(string query)
     {
-        context.Departments.Add(department);
-        context.SaveChanges();
-        return department;
+        return await context.Departments.Where(e => e.Name.Contains(query)).ToListAsync();
     }
 
-    public Department Update(Department department)
+    public async Task<Department?> GetByIdAsync(int id)
     {
-        context.Departments.Update(department);
-        context.SaveChanges();
-        return department;
+        return await context.Departments.FirstOrDefaultAsync(d => d.DepartmentId == id);
     }
 
-    public bool Delete(Department department)
+    public async Task<Department> UpdateAsync(Department entity)
     {
-        var result = context.Departments.Remove(department);
-        context.SaveChangesAsync();
+        context.Departments.Update(entity);
+        await context.SaveChangesAsync();
+        return entity;
+    }
+
+    public async Task<bool> DeleteAsync(Department entity)
+    {
+        var result = context.Departments.Remove(entity);
+        await context.SaveChangesAsync();
         return result.State == EntityState.Deleted;
+    }
+
+    public async Task<Department> AddAsync(Department entity)
+    {
+        context.Departments.Add(entity);
+        await context.SaveChangesAsync();
+        return entity;
+    }
+
+    public Task<IEnumerable<DepartmentHeadCount>> CountHeadsByDepartmentAsync(Department? department)
+    {
+        throw new NotImplementedException();
     }
 }

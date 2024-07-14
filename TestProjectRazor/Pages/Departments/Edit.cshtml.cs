@@ -1,16 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TestProjectRazor.Services;
+using TestProjectRazorModels;
 
 namespace TestProjectRazor.Pages.Departments;
 
-public class EditModel(IDepartmentRepository departmentRepository) : PageModel
+public class EditModel(IRepository<Department> repository) : PageModel
 {
-    [BindProperty] public TestProjectRazorModels.Department? Department { get; set; }
+    [BindProperty] public Department? Department { get; set; }
 
-    public IActionResult OnGet(int id)
+    public async Task<IActionResult> OnGet(int id)
     {
-        Department = departmentRepository.GetDepartmentById(id);
+        Department = await repository.GetByIdAsync(id);
 
         if (Department == null)
         {
@@ -20,14 +21,14 @@ public class EditModel(IDepartmentRepository departmentRepository) : PageModel
         return Page();
     }
 
-    public IActionResult OnPost()
+    public async Task<IActionResult> OnPost()
     {
         if (!ModelState.IsValid)
         {
             return RedirectToPage("/NotFound");
         }
 
-        Department = departmentRepository.Update(Department!);
+        Department = await repository.UpdateAsync(Department!);
         TempData["SuccessMessage"] = $"Update {Department.Name} successfully";
 
         return RedirectToPage("/Departments/Index");
