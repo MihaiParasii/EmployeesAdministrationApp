@@ -315,3 +315,4 @@
 /Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor.Services/bin/Debug/net8.0/refs/WindowsBase.dll
 /Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor.Services/bin/Debug/net8.0/TestProjectRazor.Services.runtimeconfig.json
 /Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor.Services/obj/Debug/net8.0/TestProjectRazor.Services.genruntimeconfig.cache
+/Users/admin/RiderProjects/TestProjectRazor/TestProjectRazor.Services/obj/Debug/net8.0/TestProjectRazor.Services.sourcelink.json
