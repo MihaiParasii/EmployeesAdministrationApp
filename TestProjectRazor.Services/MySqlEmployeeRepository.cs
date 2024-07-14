@@ -47,6 +47,7 @@ public class MySqlEmployeeRepository(AppDbContext context) : IEmployeeRepository
     {
         if (department == null)
         {
+            
             return await context.Employees
                 .GroupBy(x => x.Department)
                 .Select(g => new DepartmentHeadCount(g.Key, g.Count()))
